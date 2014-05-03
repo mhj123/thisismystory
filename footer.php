@@ -10,18 +10,23 @@
  * @since Starkers 3.0
  */
 ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50594533-1', 'thisismystory.uk.com');
+  ga('send', 'pageview');
+
+</script>
+
 <div class="container">
 <div class="row">
-<div class="span12 single">
+<div class="span12">
 <hr>
-<?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
-	get_sidebar( 'footer' );
-?>
 
-			<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Home</a>
+<p><a href="http://www.penguin.co.uk/privacy-policy/" target="_blank">General Terms and conditions</a></p>
 
 
 <?php

@@ -82,3 +82,4 @@ else {
 </div><!-- span12 -->
 </div><!-- row-->
 </div><!-- container -->
+<?php get_footer(); ?>
