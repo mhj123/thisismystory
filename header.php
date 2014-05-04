@@ -3,6 +3,7 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="Rvcnsu7JPuBBqxonEUD9wEiiSu4IfiRqswiHodWgHFs" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
@@ -22,7 +23,7 @@ wp_enqueue_script( tinymcescriptinclude, get_template_directory_uri() . '/jscrip
 <style type="text/css" media="screen">
     html { margin-top: 0px !important; }
   * html body { margin-top: 0px !important; }
-    body.home { background: url("<?php echo site_url(); ?>/wp-content/uploads/2014/03/texturetastic_gray.png") repeat 0 0; }
+    body.home, body.page-id-13 { background: url("<?php echo site_url(); ?>/wp-content/uploads/2014/03/texturetastic_gray.png") repeat 0 0; }
 </style>
 </head>
 
@@ -55,8 +56,7 @@ wp_enqueue_script( tinymcescriptinclude, get_template_directory_uri() . '/jscrip
   return htmlentities($output); 
  }
 ?> 
-  
-<?php if(!is_home()) { ?>
+<?php if(!is_home()&&!is_page(13)) { ?>
 <div class="navbar">
   <div class="navbar-inner">
     <div class="container">

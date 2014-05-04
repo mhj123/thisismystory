@@ -21,24 +21,16 @@
 
 </script>
 
-<div class="container">
-<div class="row">
-<div class="span12">
-<hr>
 
-<p><a href="http://www.penguin.co.uk/privacy-policy/" target="_blank">General Terms and conditions</a></p>
 
 
 <?php
-	/* Always have wp_footer() just before the closing </body>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to reference JavaScript files.
-	 */
+  /* Always have wp_footer() just before the closing </body>
+   * tag of your theme, or you will break many plugins, which
+   * generally use this hook to reference JavaScript files.
+   */
 
-	wp_footer();
+  wp_footer();
 ?>
-</div>
-</div>
-</div>
 </body>
 </html>

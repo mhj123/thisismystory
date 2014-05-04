@@ -75,11 +75,12 @@
 <input type="submit" value="Publish" id="submit" name="submit" />
 <input type="hidden" name="action" value="new_game_post" />
 </form>
-
 </div>
 
+<p>This competition is brought to you by <i>The Sunday Mirror</i> in conjunction with <i>Penguin Books</i>.</p>   
+<p><a href="http://www.penguin.co.uk/privacy-policy/" target="_blank">General Terms and conditions</a></p>
+ 
 </div><!-- span12 -->
-
 </div><!-- row-->
 </div><!-- container -->
 <?php get_footer(); ?>

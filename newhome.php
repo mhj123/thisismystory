@@ -6,29 +6,32 @@ Template Name: newhome
 get_header();
 ?>
 
- <div class="container-fluid">
-      <div class="row-fluid">
+ <div class="container">
+      <div class="row">
        <div class="span12">
 
+       <div class="hero-unit" style="margin-top:10px;">
+        <img id="mirror-logo" src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/rsz_mirror-logo2.jpg" />
+        <img id="penguin-logo" src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/Penguin_logo.png" />
+        <div id="site-title">
+<h1>This is my story</h1>
+<h2>Tell us your real life story and see it published!</h2>
+ </div><!-- sitetitle -->
+</div>
+
+<div style="margin:40px 20px;">
+
+ 
 <?php 
-
-echo"<pre>";
-print_r($_POST);
-echo"</pre>";
-
-
 if( function_exists( 'cptch_check_custom_form' ) && cptch_check_custom_form() !== true ) {
 echo "<p>You didn't complete the \"Prove you're human\" test. Please press the Back button in your browser and try again.</p>";
 }
-
 else if(strlen($_POST['content'])<10) {
 echo "<p>You didn't post a story. Please press the Back button in your browser and try again.</p>";
 } 
-
 else if(strlen($_POST['content'])>5000) {
 echo "<p>Your story was longer than 5,000 characters. Brevity is a virtue! Please press the Back button in your browser and edit your story down.</p>";
 } 
-
 else if(!filter_var($_POST['emailaddress'], FILTER_VALIDATE_EMAIL)) {
 echo "<p>You didn't enter a valid email address. Please press the Back button in your browser and try again.</p>";
 } 
@@ -66,18 +69,26 @@ else {
   $postcat= array($_POST['cat']);
 } ?>
 
-<p>Thanks for sending us your story!</p>
 
-<p>We've received it safely. We'll be in touch once we've read everyone's story.</p>
+<h3>Thanks for sending us your story!</h3>
+<br>
+<p>We've received it safely.</p> 
+
+<p>We'll be in touch once we've read everyone's story.</p>
+<br>
+<p>In the meantime, why not <a href="http://www.mirror.co.uk/" title="Mirror Online">read the day's news from The Mirror</a>, or <a href="http://www.penguin.co.uk/" title="Penguin Books UK">see the latest books from Penguin?</a></p>
+<br>
+<p>Thanks again,</p>
+
+<p><i>This is my story</i> team.</p>
 
 
-         
 <?php
 }
- ?>
+?>
 
 
-
+</div>
 
 </div><!-- span12 -->
 </div><!-- row-->
